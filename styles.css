@@ -44,7 +44,7 @@ body {
     width: 4vw;
     height: 10vw;
     position: absolute;
-    top: 23vw;
+    top: 2vw;
     left: 59vw;
     z-index: 1;
 }
@@ -83,7 +83,7 @@ body {
     width: 4vw;
     height: 10vw;
     position: absolute;
-    top: 42vw;
+    top: 2vw;
     left: 25vw;
     z-index: 1;
 }
@@ -109,7 +109,7 @@ body {
     width: 4vw;
     height: 10vw;
     position: absolute;
-    top: 42vw;
+    top: 2vw;
     left: 47vw;
     z-index: 1;
 }
@@ -135,7 +135,7 @@ body {
     width: 4vw;
     height: 10vw;
     position: absolute;
-    top: 36vw;
+    top: 6vw;
     left: 65vw;
     z-index: 1;
 }
@@ -148,7 +148,7 @@ body {
     width: 4vw;
     height: 11vw;
     position: absolute;
-    top: 17vw;
+    top: 7vw;
     left: 77vw;
     z-index: 1;
 
@@ -406,6 +406,76 @@ body {
 
 /** Classtags til animation **/
 
+.daarligskrue0 {
+    animation-name: daarligskruefall;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+.daarligskrue1 {
+    animation-name: daarligskruefall;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+.daarligskrue2 {
+    animation-name: daarligskruefall;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+.daarligskrue3 {
+    animation-name: daarligskruefall;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+.godskrue0 {
+    animation-name: godskruefall;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+.godskrue1 {
+    animation-name: godskruefall;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+.godskrue2 {
+    animation-name: godskruefall;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+.godskrue3 {
+    animation-name: godskruefall;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+.godskrue4 {
+    animation-name: godskruefall;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+.iltflaske0 {
+    animation-name: iltflaskefall;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
 
 
 
@@ -413,3 +483,38 @@ body {
 
 
 /** Keyframes **/
+
+@keyframes daarligskruefall {
+
+    0% {
+        transform: translateY(-20vw);
+    }
+
+    100% {
+        transform: translateY(40vw);
+    }
+}
+
+
+@keyframes godskruefall {
+
+    0% {
+        transform: translateY(-20vw);
+    }
+
+    100% {
+        transform: translateY(40vw);
+    }
+}
+
+
+@keyframes iltflaskefall {
+
+    0% {
+        transform: translateY(-20vw);
+    }
+
+    100% {
+        transform: translateY(40vw);
+    }
+}
