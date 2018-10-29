@@ -1,0 +1,415 @@
+body {
+    margin: 0;
+}
+
+#game_background {
+    background-image: url("SVG/Baggrund_alt.svg");
+    background-size: cover;
+    width: 100vw;
+    height: 56vw;
+    margin: auto;
+    position: relative;
+    z-index: 0;
+}
+
+#game_foreground {
+    background-image: url("SVG/mellemgrund_spil.svg");
+    background-size: cover;
+    width: 100vw;
+    height: 56vw;
+    margin: auto;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+}
+
+#daarlig_skrue0 {
+
+    background-image: url("SVG/daarlig_skrue.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 4vw;
+    height: 10vw;
+    position: absolute;
+    top: 2vw;
+    left: 4vw;
+    z-index: 1;
+}
+
+#daarlig_skrue1 {
+
+    background-image: url("SVG/daarlig_skrue.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 4vw;
+    height: 10vw;
+    position: absolute;
+    top: 23vw;
+    left: 59vw;
+    z-index: 1;
+}
+
+#daarlig_skrue2 {
+
+    background-image: url("SVG/daarlig_skrue.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 4vw;
+    height: 10vw;
+    position: absolute;
+    top: 7vw;
+    left: 80vw;
+    z-index: 1;
+}
+
+#daarlig_skrue3 {
+
+    background-image: url("SVG/daarlig_skrue.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 4vw;
+    height: 10vw;
+    position: absolute;
+    top: 15vw;
+    left: 30vw;
+    z-index: 1;
+}
+
+#skrue0 {
+
+    background-image: url("SVG/Artboard%205.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 4vw;
+    height: 10vw;
+    position: absolute;
+    top: 42vw;
+    left: 25vw;
+    z-index: 1;
+}
+
+#skrue1 {
+
+    background-image: url("SVG/Artboard%205.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 4vw;
+    height: 10vw;
+    position: absolute;
+    top: 4vw;
+    left: 60vw;
+    z-index: 1;
+}
+
+#skrue2 {
+
+    background-image: url("SVG/Artboard%205.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 4vw;
+    height: 10vw;
+    position: absolute;
+    top: 42vw;
+    left: 47vw;
+    z-index: 1;
+}
+
+#skrue3 {
+
+    background-image: url("SVG/Artboard%205.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 4vw;
+    height: 10vw;
+    position: absolute;
+    top: 4vw;
+    left: 35vw;
+    z-index: 1;
+}
+
+#skrue4 {
+
+    background-image: url("SVG/Artboard%205.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 4vw;
+    height: 10vw;
+    position: absolute;
+    top: 36vw;
+    left: 65vw;
+    z-index: 1;
+}
+
+#iltflaske {
+
+    background-image: url("SVG/ilt_5.svg");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    width: 4vw;
+    height: 11vw;
+    position: absolute;
+    top: 17vw;
+    left: 77vw;
+    z-index: 1;
+
+}
+
+#points {
+    background-image: url("SVG/point.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 20vw;
+    height: 13vw;
+    position: absolute;
+    top: 42vw;
+    left: 2vw;
+    z-index: 1;
+
+}
+
+#time {
+
+    background-image: url("SVG/tid.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 11vw;
+    height: 14vw;
+    position: absolute;
+    top: 42vw;
+    left: 86vw;
+    z-index: 1;
+}
+
+#energy {
+    background-image: url("SVG/ilt_2.svg");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    width: 15vw;
+    height: 40vw;
+    position: absolute;
+    top: 1vw;
+    left: 87vw;
+    z-index: 1;
+}
+
+
+#start {
+    background-image: url("SVG/Baggrund_alt.svg");
+    background-size: cover;
+    width: 100vw;
+    height: 56vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top: 0
+}
+
+#start_foreground {
+    background-image: url(SVG/mellemgrund_startskaerm.svg);
+    background-size: cover;
+    width: 100vw;
+    height: 56vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top: 0
+}
+
+#start_spil_knap {
+    background-image: url(SVG/Start-spillet_knap.svg);
+    background-size: cover;
+    width: 30vw;
+    height: 6vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top: 10vw;
+    left: 38vw
+}
+
+#menu_settings_knap {
+    background-image: url(SVG/menu-settings_knap.svg);
+    background-size: cover;
+    width: 30vw;
+    height: 6vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top: 18vw;
+    left: 38vw
+}
+
+#settings_knap {
+    background-image: url(SVG/settings_knap.svg);
+    background-size: cover;
+    width: 6vw;
+    height: 6vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top: 1vw;
+    left: 93vw
+}
+
+#titel {
+    background-image: url(SVG/titel.svg);
+    background-size: cover;
+    width: 40vw;
+    height: 15vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top: 28vw;
+    left: 30vw
+}
+
+
+#settings {
+    background-image: url(SVG/Baggrund_alt.svg);
+    background-size: cover;
+    width: 100vw;
+    height: 56vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top: 0
+}
+
+
+#settings_skaerm {
+    background-image: url(SVG/settingsmenu.svg);
+    background-size: cover;
+    width: 80vw;
+    height: 40vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top: 6vw;
+    left: 12vw;
+}
+
+#s_knap1 {
+    background-image: url(SVG/slideknap.svg);
+    background-size: cover;
+    width: 8vw;
+    height: 3vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top: 22vw;
+    left: 60vw;
+}
+
+
+#s_knap2 {
+    background-image: url(SVG/slideknap.svg);
+    background-size: cover;
+    width: 8vw;
+    height: 3vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top: 30vw;
+    left: 60vw;
+}
+
+#s_knap3 {
+    background-image: url(SVG/tilbage%20knap.svg);
+    background-size: 100%;
+    width: 30vw;
+    height: 6vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top: 35vw;
+    left: 40vw;
+    background-repeat: no-repeat;
+}
+
+
+
+#gameover {
+
+    background-image: url("SVG/Baggrund_alt.svg");
+    background-size: cover;
+    width: 100vw;
+    height: 56vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+}
+
+#gameover_foreground {
+    background-image: url("SVG/mellemgrund_gameover.svg");
+    background-size: cover;
+    width: 100vw;
+    height: 56vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top: 0
+}
+
+#gameover_text {
+    background-image: url("SVG/gameover%20tekst.svg");
+    background-size: cover;
+    width: 100vw;
+    height: 12vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top: 34vw;
+}
+
+
+#levelcomplete {
+    background-image: url("SVG/Baggrund_alt.svg");
+    background-size: cover;
+    width: 100vw;
+    height: 56vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+}
+
+#complete_foreground {
+    background-image: url(SVG/mellemgrund-level-complete.svg);
+    background-size: cover;
+    width: 100vw;
+    height: 56vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+
+}
+
+#complete_text {
+    background-image: url(SVG/levelcompletetekst.svg);
+    background-size: cover;
+    width: 80vw;
+    height: 7vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top: 39vw;
+    left: 9vw;
+}
+
+
+.hide {
+    display: none;
+}
+
+
+/** Classtags til animation **/
+
+
+
+
+
+
+
+/** Keyframes **/
