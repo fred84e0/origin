@@ -3,6 +3,14 @@ body {
 
 }
 
+#screen {
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 56.25;
+}
+
+
 #game_background {
     background-image: url("SVG/Baggrund_alt.svg");
     background-size: cover;
@@ -115,6 +123,7 @@ body {
     top: 2vw;
     left: 47vw;
     z-index: 1;
+    cursor: pointer;
 }
 
 #skrue3 {
@@ -201,7 +210,6 @@ body {
     background-size: cover;
     width: 100vw;
     height: 56vw;
-    margin: auto;
     position: absolute;
     z-index: 1;
     top: 0
@@ -212,7 +220,6 @@ body {
     background-size: cover;
     width: 100vw;
     height: 56vw;
-    margin: auto;
     position: absolute;
     z-index: 1;
     top: 0
@@ -223,11 +230,12 @@ body {
     background-size: cover;
     width: 30vw;
     height: 6vw;
-    margin: auto;
     position: absolute;
     z-index: 1;
     top: 10vw;
-    left: 38vw
+    left: 38vw;
+    cursor: pointer;
+
 }
 
 #menu_settings_knap {
@@ -235,11 +243,11 @@ body {
     background-size: cover;
     width: 30vw;
     height: 6vw;
-    margin: auto;
     position: absolute;
     z-index: 1;
     top: 18vw;
-    left: 38vw
+    left: 38vw;
+    cursor: pointer;
 }
 
 #settings_knap {
@@ -247,11 +255,11 @@ body {
     background-size: cover;
     width: 6vw;
     height: 6vw;
-    margin: auto;
     position: absolute;
     z-index: 1;
     top: 1vw;
-    left: 93vw
+    left: 93vw;
+    cursor: pointer;
 }
 
 #titel {
@@ -259,11 +267,10 @@ body {
     background-size: cover;
     width: 40vw;
     height: 14vw;
-    margin: auto;
     position: absolute;
     z-index: 1;
     top: 28vw;
-    left: 30vw
+    left: 30vw;
 }
 
 
@@ -272,10 +279,9 @@ body {
     background-size: cover;
     width: 100vw;
     height: 56vw;
-    margin: auto;
     position: absolute;
     z-index: 1;
-    top: 0
+    top: 0;
 }
 
 
@@ -284,7 +290,6 @@ body {
     background-size: cover;
     width: 80vw;
     height: 40vw;
-    margin: auto;
     position: absolute;
     z-index: 1;
     top: 6vw;
@@ -296,7 +301,6 @@ body {
     background-size: cover;
     width: 8vw;
     height: 3vw;
-    margin: auto;
     position: absolute;
     z-index: 1;
     top: 22vw;
@@ -309,7 +313,6 @@ body {
     background-size: cover;
     width: 8vw;
     height: 3vw;
-    margin: auto;
     position: absolute;
     z-index: 1;
     top: 30vw;
@@ -321,12 +324,12 @@ body {
     background-size: 100%;
     width: 30vw;
     height: 6vw;
-    margin: auto;
     position: absolute;
     z-index: 1;
     top: 35vw;
     left: 40vw;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 
@@ -337,7 +340,6 @@ body {
     background-size: cover;
     width: 100vw;
     height: 56vw;
-    margin: auto;
     position: absolute;
     z-index: 1;
     top: 0;
@@ -348,7 +350,6 @@ body {
     background-size: cover;
     width: 100vw;
     height: 56vw;
-    margin: auto;
     position: absolute;
     z-index: 1;
     top: 0
@@ -359,7 +360,6 @@ body {
     background-size: cover;
     width: 100vw;
     height: 12vw;
-    margin: auto;
     position: absolute;
     z-index: 1;
     top: 34vw;
@@ -371,7 +371,6 @@ body {
     background-size: cover;
     width: 100vw;
     height: 56vw;
-    margin: auto;
     position: absolute;
     z-index: 1;
     top: 0;
@@ -382,7 +381,6 @@ body {
     background-size: cover;
     width: 100vw;
     height: 56vw;
-    margin: auto;
     position: absolute;
     z-index: 1;
     top: 0;
@@ -394,7 +392,6 @@ body {
     background-size: cover;
     width: 80vw;
     height: 7vw;
-    margin: auto;
     position: absolute;
     z-index: 1;
     top: 39vw;
@@ -410,9 +407,9 @@ body {
     visibility: visible;
 }
 
-
-
-
+.paused {
+    animation-play-state: paused;
+}
 
 
 
@@ -420,72 +417,29 @@ body {
 
 .daarligskrue0 {
     animation-name: daarligskruefall;
-    animation-duration: 3s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
+    cursor: pointer;
 }
 
-.daarligskrue1 {
-    animation-name: daarligskruefall;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-}
-
-.daarligskrue2 {
-    animation-name: daarligskruefall;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-}
-
-.daarligskrue3 {
-    animation-name: daarligskruefall;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-}
 
 .godskrue0 {
     animation-name: godskruefall;
-    animation-duration: 2s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
+    cursor: pointer;
 }
 
-.godskrue1 {
-    animation-name: godskruefall;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-}
 
-.godskrue2 {
-    animation-name: godskruefall;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-}
-
-.godskrue3 {
-    animation-name: godskruefall;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-}
-
-.godskrue4 {
-    animation-name: godskruefall;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-}
 
 .iltflaske0 {
     animation-name: iltflaskefall;
-    animation-duration: 2s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
+    cursor: pointer;
 }
 
 .pulse {
@@ -522,7 +476,7 @@ body {
     }
 
     100% {
-        transform: translateY(40vw);
+        transform: translateY(60vw);
     }
 }
 
@@ -534,7 +488,7 @@ body {
     }
 
     100% {
-        transform: translateY(40vw);
+        transform: translateY(60vw);
     }
 }
 
