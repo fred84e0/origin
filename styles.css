@@ -34,7 +34,7 @@ body {
     top: 0;
 }
 
-#daarlig_skrue0 {
+.daarlig_skrue0 {
 
     background-image: url("SVG/daarlig_skrue.svg");
     background-repeat: no-repeat;
@@ -47,7 +47,7 @@ body {
     z-index: 1;
 }
 
-#daarlig_skrue1 {
+.daarlig_skrue1 {
 
     background-image: url("SVG/daarlig_skrue.svg");
     background-repeat: no-repeat;
@@ -60,7 +60,7 @@ body {
     z-index: 1;
 }
 
-#daarlig_skrue2 {
+.daarlig_skrue2 {
 
     background-image: url("SVG/daarlig_skrue.svg");
     background-repeat: no-repeat;
@@ -73,7 +73,7 @@ body {
     z-index: 1;
 }
 
-#daarlig_skrue3 {
+.daarlig_skrue3 {
 
     background-image: url("SVG/daarlig_skrue.svg");
     background-repeat: no-repeat;
@@ -86,7 +86,7 @@ body {
     z-index: 1;
 }
 
-#skrue0 {
+.skrue0 {
 
     background-image: url("SVG/Artboard%205.svg");
     background-repeat: no-repeat;
@@ -99,7 +99,7 @@ body {
     z-index: 1;
 }
 
-#skrue1 {
+.skrue1 {
 
     background-image: url("SVG/Artboard%205.svg");
     background-repeat: no-repeat;
@@ -112,7 +112,7 @@ body {
     z-index: 1;
 }
 
-#skrue2 {
+.skrue2 {
 
     background-image: url("SVG/Artboard%205.svg");
     background-repeat: no-repeat;
@@ -126,7 +126,7 @@ body {
     cursor: pointer;
 }
 
-#skrue3 {
+.skrue3 {
 
     background-image: url("SVG/Artboard%205.svg");
     background-repeat: no-repeat;
@@ -139,7 +139,7 @@ body {
     z-index: 1;
 }
 
-#skrue4 {
+.skrue4 {
 
     background-image: url("SVG/Artboard%205.svg");
     background-repeat: no-repeat;
@@ -152,7 +152,7 @@ body {
     z-index: 1;
 }
 
-#iltflaske {
+.iltflaske {
 
     background-image: url("SVG/ilt_5.svg");
     background-repeat: no-repeat;
@@ -415,7 +415,7 @@ body {
 
 /** Classtags til animation **/
 
-.daarligskrue0 {
+.daarligskruea {
     animation-name: daarligskruefall;
     animation-duration: 6s;
     animation-iteration-count: infinite;
@@ -424,7 +424,7 @@ body {
 }
 
 
-.godskrue0 {
+.godskruea {
     animation-name: godskruefall;
     animation-duration: 6s;
     animation-iteration-count: infinite;
@@ -507,7 +507,7 @@ body {
 
 @keyframes pulse_kf {
     0% {
-        transform: scale(0.97);
+        transform: scale(0.7);
     }
 
     100% {

@@ -88,20 +88,22 @@ function startGame() {
 
 
     //Gode skruer
-    document.querySelector("#skrue0").classList.add("godskrue0");
-    document.querySelector("#skrue1").classList.add("godskrue0");
-    document.querySelector("#skrue2").classList.add("godskrue0");
-    document.querySelector("#skrue3").classList.add("godskrue0");
-    document.querySelector("#skrue4").classList.add("godskrue0");
+    document.querySelector("#skrue0").classList.add("godskruea");
+    document.querySelector("#skrue1").classList.add("godskruea");
+    document.querySelector("#skrue2").classList.add("godskruea");
+    document.querySelector("#skrue3").classList.add("godskruea");
+    document.querySelector("#skrue4").classList.add("godskruea");
 
     //Daarlige skruer
-    document.querySelector("#daarlig_skrue0").classList.add("daarligskrue0");
-    document.querySelector("#daarlig_skrue1").classList.add("daarligskrue0");
-    document.querySelector("#daarlig_skrue2").classList.add("daarligskrue0");
-    document.querySelector("#daarlig_skrue3").classList.add("daarligskrue0");
+    document.querySelector("#daarlig_skrue0").classList.add("daarligskruea");
+    document.querySelector("#daarlig_skrue1").classList.add("daarligskruea");
+    document.querySelector("#daarlig_skrue2").classList.add("daarligskruea");
+    document.querySelector("#daarlig_skrue3").classList.add("daarligskruea");
 
     //Iltflaske
     document.querySelector("#iltflaske").classList.add("iltflaske0");
+
+
 
 
 }
@@ -127,6 +129,19 @@ function clickGodSkrue() {
     this.classList.add("hide");
 
 
+    console.log(points);
+    document.querySelector("#points").innerHTML = points;
+    let myNumber = Math.floor((Math.random() * 5) + 1);
+    console.log("tilfældigt tal: " + myNumber);
+    this.classList = "godskruea skrue" + myNumber;
+
+
+
+    //this.classList.remove("godskruea");
+
+    gameStatus();
+
+
 
 
 }
@@ -148,7 +163,20 @@ function clickDaarligSkrue() {
 
     this.classList.add("paused");
     this.classList.add("hide");
+
+
+
+    console.log(points);
+    document.querySelector("#points").innerHTML = points;
+    let myNumber1 = Math.floor((Math.random() * 4) + 1);
+    console.log("tilfældigt tal: " + myNumber1);
+    this.classList = "daarligskruea daarlig_skrue" + myNumber1;
+
+
+
+
 }
+
 
 
 document.querySelector("#iltflaske").addEventListener("click", clickIltflaske);
@@ -157,6 +185,29 @@ function clickIltflaske() {
     console.log("click iltflaske");
 
     document.querySelector("#iltflaske").classList.add("hide");
+
+
+}
+
+function gameStatus() {
+
+    if (points == 4) {
+        levelComplete();
+    }
+
+
+
+
+}
+
+
+function levelComplete() {
+    console.log("level complete");
+
+
+    document.querySelector("#levelcomplete").classList.add("show");
+    document.querySelector("#levelcomplete").classList.remove("hide");
+    document.querySelector("#game").classList.add("hide");
 
 
 }
