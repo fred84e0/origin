@@ -34,7 +34,7 @@ body {
     top: 0;
 }
 
-.daarlig_skrue0 {
+.daarlig_skrue4 {
 
     background-image: url("SVG/daarlig_skrue.svg");
     background-repeat: no-repeat;
@@ -86,7 +86,7 @@ body {
     z-index: 1;
 }
 
-.skrue0 {
+.skrue5 {
 
     background-image: url("SVG/Artboard%205.svg");
     background-repeat: no-repeat;
@@ -189,9 +189,12 @@ body {
     position: absolute;
     top: 42vw;
     left: 86vw;
-    z-index: 1;
+    z-index: 0;
 }
 
+
+
+/*
 #energy {
     background-image: url("SVG/ilt_2.svg");
     background-repeat: no-repeat;
@@ -203,6 +206,7 @@ body {
     left: 87vw;
     z-index: 1;
 }
+*/
 
 
 #start {
@@ -238,17 +242,6 @@ body {
 
 }
 
-#menu_settings_knap {
-    background-image: url(SVG/menu-settings_knap.svg);
-    background-size: cover;
-    width: 30vw;
-    height: 6vw;
-    position: absolute;
-    z-index: 1;
-    top: 18vw;
-    left: 38vw;
-    cursor: pointer;
-}
 
 #settings_knap {
     background-image: url(SVG/settings_knap.svg);
@@ -305,6 +298,7 @@ body {
     z-index: 1;
     top: 22vw;
     left: 60vw;
+
 }
 
 
@@ -331,6 +325,34 @@ body {
     background-repeat: no-repeat;
     cursor: pointer;
 }
+
+
+#restart {
+    background-image: url(SVG/forfraknap.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 14vw;
+    position: absolute;
+    z-index: 1;
+    top: 2vw;
+    right: 3vw;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#restart1 {
+    background-image: url(SVG/forfraknap.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 14vw;
+    position: absolute;
+    z-index: 1;
+    top: 2vw;
+    right: 3vw;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
 
 
 
@@ -398,6 +420,52 @@ body {
     left: 9vw;
 }
 
+#sprite {
+    background-image: url("SVG/sprite.svg");
+    background-repeat: no-repeat;
+    background-size: 600% 100%;
+    width: 10vw;
+    height: 50vw;
+    position: absolute;
+    top: -1vw;
+    left: 87vw;
+    z-index: 1;
+}
+
+
+.antal p {
+    position: absolute;
+    margin-top: 12%;
+    margin-left: 30%;
+    font-family: sans-serif;
+    z-index: 2;
+    width: 100%;
+    height: 60%;
+    font-size: 4vw;
+}
+
+.showtimer-tekst {
+    position: absolute;
+    margin-top: 40%;
+    margin-left: 30%;
+    font-family: sans-serif;
+    z-index: 2;
+    width: 100%;
+    height: 60%;
+    font-size: 3.5vw;
+}
+
+
+.on {}
+
+.off {
+    transform: rotate(180deg);
+}
+
+
+
+
+
 
 .hide {
     visibility: hidden;
@@ -444,7 +512,7 @@ body {
 
 .pulse {
     animation-name: pulse_kf;
-    animation-duration: 1.7s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: ease-in;
@@ -459,6 +527,13 @@ body {
 }
 
 
+.energy_sprite {
+    animation-name: energy_kf;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: steps(5);
+}
 
 
 
@@ -468,6 +543,19 @@ body {
 
 
 /** Keyframes **/
+
+@keyframes energy_kf {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+
+
 
 @keyframes daarligskruefall {
 
@@ -499,6 +587,7 @@ body {
         transform: translateY(-20vw);
     }
 
+
     100% {
         transform: translateY(40vw);
     }
@@ -507,7 +596,7 @@ body {
 
 @keyframes pulse_kf {
     0% {
-        transform: scale(0.7);
+        transform: scale(0.9);
     }
 
     100% {
